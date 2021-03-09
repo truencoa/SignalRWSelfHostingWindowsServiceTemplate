@@ -27,14 +27,14 @@ namespace SignalREngine
             return (base.OnConnected());
         }
 
-        public override Task OnDisconnected()
+        public override Task OnDisconnected(bool stopCalled)
         {
-            return (base.OnDisconnected());
+            return (base.OnDisconnected(stopCalled));
         }
 
         public override Task OnReconnected()
         {
-            return (base.OnDisconnected());
+            return (base.OnReconnected());
         }
     }
 }
